@@ -291,7 +291,9 @@ RC CreateTable(char *relName,int attrCount,AttrInfo *attributes){
 	//遍历vector，查询是否已经存在该记录文件句柄
 	for(std::vector<RM_FileHandle *>::size_type i = 0; i < vec.size(); i++){//遍历vector中的句柄
 		if(vec[i] != NULL){
-			//if(vec[i]->fileName)
+			if(vec[i]->PFhandle.fileName){//未完成
+
+			}
 		}
 	}
 }
